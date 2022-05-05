@@ -1,0 +1,56 @@
+{
+    "server": {
+        "base_url": "http://localhost:8000/api"
+    },
+    "requestMethod": {
+        "GET": "get",
+        "POST": "post",
+        "PUT": "put",
+        "DELETE": "delete"
+    },
+    "assets":{
+        "gate": "/public/farm-illustration.jpg"
+    },
+    "serviceDictionary":{
+        "directory": [
+            {"id": 1, "name": "home", "display": "HOME", "route": "/farmer/home"},
+            {"id": 2, "name": "farm", "display": "FARM", "route": "/farmer/farm"},
+            {"id": 3, "name": "sales", "display": "SALES", "route": "/farmer/sales"},
+            {"id": 4, "name": "mail", "display": "MAIL", "route": "/farmer/mail"}
+        ],
+        "surplus":{
+            "types":[
+                {"value": 0, "label": "All", "reference": "all"},
+                {"value": 25, "label": "Vegetable", "reference": "vegetable"},
+                {"value": 50, "label": "Fruit", "reference": "fruit"},
+                {"value": 75, "label": "Pulses", "reference": "pulses"},
+                {"value": 100, "label": "Grain", "reference": "grain" }
+            ],
+            "modalStyle": {
+                "position": "absolute",
+                "top": "50%",
+                "left": "50%",
+                "transform": "translate(-50%, -50%)",
+                "width": 400,
+                "bgcolor": "background.paper",
+                "border": "2px solid #000",
+                "boxShadow": 24,
+                "p": 4
+            },
+            "typesColors":[
+                {"type": "vegetable", "color": "#ff6f00"},
+                {"type": "fruit", "color": "#0d47a1"},
+                {"type": "pulses", "color": "#3e2723"},
+                {"type": "grain", "color": "#bf360c"}
+            ]
+        },
+        "messages": {
+            "services": [
+                {"id": 1, "name": "inbox", "asset": "<MailOutlinedIcon/>", "display": "View inbox"},
+                {"id": 2, "name": "sent", "asset": "<ForwardToInboxOutlinedIcon/>", "display": "View sent messages"},
+                {"id": 3, "name": "requests", "asset": "<NotificationImportantOutlinedIcon/>", "display": "View service requests"},
+                {"id": 4, "name": "compose", "asset": "<AddCircleOutlineOutlinedIcon/>", "display": "Compose new mail"}
+            ]
+        }
+    }
+}

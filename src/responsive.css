@@ -1,0 +1,80 @@
+
+
+.content {
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container ul {
+    list-style: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.container ul li {
+    margin-right: 5px !important;
+    padding: 5px !important;
+}
+
+.container ul li a {
+    color: #f5f2f2 !important;
+    font-size: 21px;
+}
+.container ul li.group-selected {
+    border-bottom: 2px solid #7faff7;
+}
+.container ul li a.selected {
+    color: #f5f2f2 !important;
+    font-weight: 600;
+}
+
+@media screen and (max-width:1200) {
+    .content {
+        margin-right: 100px !important;
+        margin-left: 100px !important;
+    }
+    .container ul li {
+        display: inline-block !important;
+    }
+}
+@media screen and (max-width:1080) {
+    .content {
+        margin-right: 80px !important;
+        margin-left: 80px !important;
+    }
+    .container ul li {
+        display: inline-block !important;
+    }
+}
+@media screen and (max-width:826) {
+    .content {
+        margin-right: 40px !important;
+        margin-left: 40px !important;
+    }
+    .container ul li {
+        display: inline-block !important;
+    }
+}
+@media screen and (max-width:680) {
+    .content {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+    .container ul li {
+        display: inline-block !important;
+    }
+}
+@media screen and (max-width:420) {
+    .content {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+    .container ul li {
+        display: block !important;
+    }
+}
